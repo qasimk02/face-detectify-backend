@@ -17,8 +17,8 @@ const db = knex({
     host: "127.0.0.1",
     port: 5432,
     user: "postgres",
-    password: "qasim@123",
-    database: "face_detectify",
+    password: "root",
+    database: "faceDetectify",
   },
 });
 
@@ -50,6 +50,7 @@ const db = knex({
 //         }
 //     ]
 // }
+
 
 //  Middlewares
 app.use(express.json()); //To parse the json (bodyparser)

@@ -30,7 +30,7 @@ const app = new Clarifai.App({
 const handleApiCall = (req, res) => {
   const imageUrl = req.body.input;
   axios
-    .post("http://192.168.0.106:5000/detect_faces", {
+    .post("http://172.22.96.1:5000/detect_faces", {
       image_url: req.body.input.trim(),
     })
     .then((response) => {
